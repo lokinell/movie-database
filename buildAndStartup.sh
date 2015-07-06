@@ -8,7 +8,7 @@ sudo npm install
 bower install
 grunt
 rm -rf /opt/moviedatabase/shop-app
-cp  -R dist/. /opt/moviedatabase/shop-app
+sudo cp  -R dist/. /opt/moviedatabase/shop-app
 cd ..
 find . -type f -name moviedatabase.conf -exec sed -i 's/localhost/10.5.6.49/g' {} \;''
 
